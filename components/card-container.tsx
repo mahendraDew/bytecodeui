@@ -13,7 +13,7 @@ export const CardContainer = ({
   name,
   description
 }: CardComponentProps) => (
-  <Link href={`/${slug}`}>
+  <Link href={`/ui/${slug}`}>
     <div className="relative flex h-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-[radial-gradient(#ffffff12_1px,transparent_1px)] bg-[size:16px_16px] py-10">
       {children}
     </div>
