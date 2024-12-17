@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 export const StaticMac = ({ imgurl }: { imgurl?: string }) => {
@@ -12,7 +13,7 @@ export const StaticMac = ({ imgurl }: { imgurl?: string }) => {
                 <div className='absolute block w-[97.65%] h-[89.5%] mx-auto mt-[3.5%] left-0 right-0 bg-[#151515] overflow-x-hidden'>
                   <div className='w-full h-full bg-zinc-950 flex justify-center items-center'>
                     {/* <iframe src="" className="left-0 top-0 absolute w-[200%] h-[200%] border-0 scale-50 origin-top-left bg-red-400" allowFullScreen></iframe> */}
-                   { imgurl ? <img
+                   { imgurl ? <Image
                       src={imgurl}
                       alt='bg-img'
                       className='flex justify-center items-center'
