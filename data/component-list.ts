@@ -5,6 +5,7 @@ import { ModernCardDemo } from "@/components/demos/modern-card-demo";
 import { ShimmerDemo } from "@/components/demos/shimmer-demo";
 import { SpotligthBorderDemo } from "@/components/demos/spotlight-border-demo";
 import { SpotlightDemo } from "@/components/demos/spotlight-demo";
+import { StaticMacDemo } from "@/components/demos/static-mac-demo";
 
 
 export const COMPONENTS_LIST = [
@@ -43,13 +44,19 @@ export const COMPONENTS_LIST = [
     name: "Hacky Button",
     component: HackyButtonDemo,
     slug: "hacky-button",
-    description: "hacky button effect on button text."
+    description: "Hacky button effect on button text."
   },
   {
     name: "Modern Card",
     component: ModernCardDemo,
     slug: "modern-card",
-    description: "new modern card."
+    description: "New modern card."
+  },
+  {
+    name: "Static Mac",
+    component: StaticMacDemo,
+    slug: "static-mac",
+    description: "Static mac with customizable image/background."
   },
   
 ]

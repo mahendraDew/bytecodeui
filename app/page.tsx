@@ -3,7 +3,7 @@
 import Hero from '@/components/landing/Hero'
 import Footer from '@/components/Footer'
 import { useState } from 'react'
-import Preloader from '@/components/landing/preloader'
+// import Preloader from '@/components/landing/preloader'
 import Explore from '@/components/landing/Explore'
 import Builtwith from '@/components/landing/Builtwith'
 
@@ -13,9 +13,9 @@ export default function Home () {
 
   return (
     <div className='w-full h-full'>
-     {loading ? (
+     {/* {loading ? (
           <Preloader key="preloader" onComplete={() => setLoading(false)} />
-        ) : (
+        ) : ( */}
           <>
             <Hero />
 
@@ -25,7 +25,7 @@ export default function Home () {
             
             <Footer /> 
           </>
-        )}
+        {/* )} */}
     </div>
   )
 }
