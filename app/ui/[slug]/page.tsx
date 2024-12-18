@@ -7,6 +7,14 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 // import { CodeBlock } from '@/components/ui/code-block'
 import CodeHighlight from '@/components/ui/code-hightlighter'
 
+import { Manrope } from 'next/font/google'
+
+const manrope = Manrope({
+  subsets: ['latin'],
+  weight: ['400', '700', '800'],
+  style: ['normal']
+})
+
 interface Props {
   params: { slug: string }
 }
@@ -52,36 +60,18 @@ export default async function ComponentPage ({ params }: Props) {
             <TabsTrigger value='code'>Code</TabsTrigger>
             <TabsTrigger value='usage'>Usage</TabsTrigger>
           </TabsList>
+          <div className='my-5'>
+            <div className='mb-2  text-gray-400'>
+              Copy and paste the following code into your project.
+            </div>
+            <div className=''>
+              <span className={`bg-zinc-900 text-slate-300 p-1 rounded-md  px-2 ${manrope.className}`}>components/ui/{currentComponent.slug}.tsx</span>
+            </div>
+          </div>
           <TabsContent value='code'>
-            {/* {comp} */}
-            {/* <CodeBlock lang='tsx'>
-            {comp}
-            </CodeBlock> */}
-
             <CodeHighlight code={comp} />
-
-            {/* <CodeBlock code={comp} lang="tsx" />
-          {Boolean(twConfig) && (
-            <div className="my-10">
-            <div className="mb-2">
-            <span className="text-xl text-gray-400">
-                  tailwind.config.js
-                  </span>
-                  </div>
-                  <CodeBlock
-                  code={twConfig}
-                  lang="tsx"
-                  fileName="tailwind.config.js"
-                  />
-                  </div>
-                  )} */}
           </TabsContent>
           <TabsContent value='usage'>
-            {/* <CodeBlock code={demo} lang="tsx" /> */}
-            {/* {demo} */}
-            {/* <CodeBlock lang='tsx'>
-            {demo}
-            </CodeBlock> */}
             <CodeHighlight code={demo} />
           </TabsContent>
         </Tabs>
