@@ -1,5 +1,6 @@
 import React from 'react'
-import { StaticMac } from '../examples/static-mac'
+import { StaticMac } from '@/components/examples/static-mac'
+
 
 export function StaticMacDemo() {
   return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import { FlickeringBackground } from '../examples/flickering-background'
+import { FlickeringBackground } from '@/components/examples/flickering-background'
 
 import { Manrope } from 'next/font/google'
 const manrope = Manrope({

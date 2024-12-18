@@ -1,5 +1,6 @@
 import { AnimatedBorderDemo } from "@/components/demos/animated-border-demo";
 import { CardHorizonDemo } from "@/components/demos/card-horizon-demo";
+import { DynamicGridPatternDemo } from "@/components/demos/dynamic-grid-pattern-demo";
 import { FlickeringBackgroundDemo } from "@/components/demos/flickering-background-demo";
 import {HackyButtonDemo} from "@/components/demos/hacky-button-demo";
 import { ModernCardDemo } from "@/components/demos/modern-card-demo";
@@ -64,6 +65,12 @@ export const COMPONENTS_LIST = [
     component: FlickeringBackgroundDemo,
     slug: "flickering-background",
     description: "Flickering Background from your hero page."
+  },
+  {
+    name: "Dynamic Grid Pattern",
+    component: DynamicGridPatternDemo,
+    slug: "dynamic-grid-pattern",
+    description: "Grid Background from your hero page with hover effect."
   },
   
 ]
