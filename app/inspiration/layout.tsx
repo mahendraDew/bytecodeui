@@ -6,7 +6,7 @@ export default function layout ({ children }: { children: React.ReactNode }) {
   return (
     <>
       <div className='px-4 mx-auto flex min-h-screen max-w-7xl flex-col'>
-        <Navbar logoText='RS' logoUrl='/resources' />
+        <Navbar logoText='IN' logoUrl='/inspiration' />
         {children}
       </div>
       <Footer />

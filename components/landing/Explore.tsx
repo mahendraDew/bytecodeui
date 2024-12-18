@@ -14,7 +14,7 @@ export default function Explore () {
   const cards = [
     { title: 'UI', href: '/ui' },
     { title: 'Template', href: '/template' },
-    { title: 'Resources', href: '/resources' }
+    { title: 'Inspiration', href: '/inspiration' }
   ]
   return (
     <div

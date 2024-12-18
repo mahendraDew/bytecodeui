@@ -14,7 +14,7 @@ export default function Footer () {
      <div className=' w-full max-w-7xl h-full flex flex-col gap-2 '>
         <span><Link href={"/ui"} className='italic text-gray-300 hover:text-white transition-colors '>/ui</Link></span>
         <span><Link href={"/template"} className='italic text-gray-300 hover:text-white transition-colors '>/template</Link></span>
-        <span><Link href={"/resources"} className='italic text-gray-300 hover:text-white transition-colors '>/resource</Link></span>
+        <span><Link href={"/inspiration"} className='italic text-gray-300 hover:text-white transition-colors '>/inspiration</Link></span>
 
      </div>
       <div className=' w-full max-w-7xl h-full font-extrabold   flex justify-center items-center'>
