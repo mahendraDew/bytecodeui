@@ -1,7 +1,12 @@
 import Image from 'next/image'
 import React from 'react'
 
-export const StaticMac = ({ imgurl }: { imgurl?: string }) => {
+type StaticMacProps = {
+  imgurl?: string,
+  text?: string
+}
+
+export const StaticMac = ({ imgurl , text }: StaticMacProps) => {
   return (
     <div className=''>
       <div className='w-[85%] max-w-[1280px] min-w-[320px] my-[10px] mx-auto h-auto self-start relative flex'>
@@ -17,7 +22,7 @@ export const StaticMac = ({ imgurl }: { imgurl?: string }) => {
                       src={imgurl}
                       alt='bg-img'
                       className='flex justify-center items-center'
-                    /> : <h1 className='font-semibold text-slate-400'>BYTECODE</h1>}
+                    /> : <h1 className='font-semibold text-slate-400'> {text ? text : "BYTECODE"}</h1>}
                   </div>
                 </div>
                 <div className='flex justify-center absolute w-full h-[4.9%] bottom-[0.15%] z-[3] bg-[#212121] rounded-bl-[2.5%] rounded-br-[2.5%]'>

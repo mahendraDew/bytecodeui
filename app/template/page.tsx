@@ -1,6 +1,5 @@
 "use client"
-import LaunchingSoon from '@/components/landing/LaunchingSoon'
-// import { Navbar } from '@/components/Navbar'
+import LaunchingSoon from '@/components/LaunchingSoon'
 import React from 'react'
 
 export default function page () {
