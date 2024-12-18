@@ -1,5 +1,6 @@
 import { AnimatedBorderDemo } from "@/components/demos/animated-border-demo";
 import { CardHorizonDemo } from "@/components/demos/card-horizon-demo";
+import { FlickeringBackgroundDemo } from "@/components/demos/flickering-background-demo";
 import {HackyButtonDemo} from "@/components/demos/hacky-button-demo";
 import { ModernCardDemo } from "@/components/demos/modern-card-demo";
 import { ShimmerDemo } from "@/components/demos/shimmer-demo";
@@ -57,6 +58,12 @@ export const COMPONENTS_LIST = [
     component: StaticMacDemo,
     slug: "static-mac",
     description: "Static mac with customizable image/background."
+  },
+  {
+    name: "Flickering Background",
+    component: FlickeringBackgroundDemo,
+    slug: "flickering-background",
+    description: "Flickering Background from your hero page."
   },
   
 ]
