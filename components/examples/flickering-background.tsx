@@ -179,7 +179,7 @@ export const FlickeringBackground: React.FC<FlickeringGridProps> = ({
   }, [setupCanvas, updateSquares, drawGrid, width, height, isInView]);
 
   return (
-    <div ref={containerRef} className={`w-full h-full ${className} overflow-hidden`}>
+    <div ref={containerRef} className={`w-full h-full ${className} overflow-hidden flex justify-center items-center`}>
       <canvas
         ref={canvasRef}
         className="pointer-events-none"
