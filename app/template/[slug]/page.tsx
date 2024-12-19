@@ -69,6 +69,7 @@ export default async function TemplatePage ({ params }: Props) {
         <div className='flex justify-between'>
           <Link
             href={`/template/live/${slug}`}
+            target='_blank'
             rel='noopener noreferrer'
             className='block group  transition-all duration-300'
           >

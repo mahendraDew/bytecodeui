@@ -1,3 +1,4 @@
+import { ByteDailyDemo } from '@/components/templates/demos/byte-daily-demo'
 import { BytecodeUiDemo } from '@/components/templates/demos/bytecode-ui-demo'
 
 export const TEMPLATE_LIST = [
@@ -14,6 +15,19 @@ export const TEMPLATE_LIST = [
       'feature-card.tsx',
       'pricing-card.tsx',
       'smooth-scroll-link.tsx'
+    ]
+  },
+  {
+    id: 2,
+    title: 'bytedaily',
+    description:
+      'Bytedaily - get the daily news on your mail.',
+    imageUrl: '/assests/template/byte-daily.png',
+    category: 'landing page',
+    slug: 'byte-daily',
+    pageDemo: ByteDailyDemo,
+    components: [
+      
     ]
   }
 ]

@@ -15,7 +15,7 @@ import CodeHighlight from '../ui/code-hightlighter'
 // }
 type Props = {
   mainPageCode: string
-  components: string[]
+  components?: string[]
   componentCodes: string[]
 }
 
@@ -34,7 +34,7 @@ export default function CodeContent ({
       <Tabs defaultValue='page.tsx' onValueChange={handleTabChange}>
         <TabsList className=''>
           <TabsTrigger value='page.tsx'>page.tsx</TabsTrigger>
-          {components.map((component, index) => (
+          {components && components.map((component, index) => (
             <TabsTrigger key={index} value={component}>
               {component}
             </TabsTrigger>
@@ -56,7 +56,7 @@ export default function CodeContent ({
         <TabsContent value='page.tsx'>
           <CodeHighlight code={mainPageCode} />
         </TabsContent>
-        {components.map((component, index) => (
+        {components && components.map((component, index) => (
           <TabsContent key={index} value={component}>
             <CodeHighlight code={componentCodes[index]} />
           </TabsContent>

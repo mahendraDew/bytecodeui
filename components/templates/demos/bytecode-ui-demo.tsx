@@ -1,11 +1,10 @@
 import React from 'react'
-import {Home} from '../pages/bytecode-ui/bytecode-ui'
+import { Home } from '../pages/bytecode-ui/bytecode-ui'
 
-export function BytecodeUiDemo() {
+export function BytecodeUiDemo () {
   return (
-      <div>
-    <Home />
-    this is bytecode demo comp
-</div>
+    <div>
+      <Home />
+    </div>
   )
 }
