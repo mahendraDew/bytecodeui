@@ -53,19 +53,14 @@ export default function CodeContent ({
             </p>
           )}
         </div>
-        <div className='border rounded-md mt-4 p-0'>
-          <TabsContent value='page.tsx' className='max-h-screen h-full overflow-auto mt-0'>
-            <CodeHighlight code={mainPageCode} />
+        <TabsContent value='page.tsx'>
+          <CodeHighlight code={mainPageCode} />
+        </TabsContent>
+        {components.map((component, index) => (
+          <TabsContent key={index} value={component}>
+            <CodeHighlight code={componentCodes[index]} />
           </TabsContent>
-          {components.map((component, index) => (
-            <TabsContent
-              key={index}
-              value={component}
-              className='max-h-screen h-full overflow-auto mt-0'>
-              <CodeHighlight code={componentCodes[index]} />
-            </TabsContent>
-          ))}
-        </div>
+        ))}
       </Tabs>
     </div>
   )

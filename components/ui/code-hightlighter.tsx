@@ -15,10 +15,10 @@ interface CodeHighlightProps {
 const CodeHighlight = ({ code, lang = 'tsx' }: CodeHighlightProps) => {
   const [copied, setCopied] = useState(false)
   return (
-    <div className='relative rounded-md p-4 '>
+    <div className='relative rounded-md p-4 border'>
       <Button
         className={cn(
-          'absolute right-4 top-4 h-8 w-8 bg-secondary',
+          'absolute right-8 top-6 h-8 w-8 bg-secondary',
           lang === 'shell' && 'right-1 top-1'
         )}
         variant='ghost'
@@ -38,7 +38,7 @@ const CodeHighlight = ({ code, lang = 'tsx' }: CodeHighlightProps) => {
         )}
       </Button>
       <div className={'h-full w-full '}>
-        <Highlight className={cn('h-full w-full', lang)}>{code}</Highlight>
+        <Highlight className={cn('h-screen w-full overflow-auto bg-blue-300', lang)}>{code}</Highlight>
       </div>
     </div>
   )

@@ -65,7 +65,11 @@ export default async function ComponentPage ({ params }: Props) {
               Copy and paste the following code into your project.
             </div>
             <div className=''>
-              <span className={`bg-zinc-900 text-slate-300 p-1 rounded-md  px-2 ${manrope.className}`}>components/ui/{currentComponent.slug}.tsx</span>
+              <span
+                className={`bg-zinc-900 text-slate-300 p-1 rounded-md  px-2 ${manrope.className}`}
+              >
+                components/ui/{currentComponent.slug}.tsx
+              </span>
             </div>
           </div>
           <TabsContent value='code'>
