@@ -4,35 +4,16 @@ export const TEMPLATE_LIST = [
     {
       id: 1,
       title: 'bytecode ui',
+      description:"Bytecode ui is the collection of ready-to-use components and template lib.",
       imageUrl: '/assests/template/bytecode-ui.png',
-      slug: 'bytecode-ui',
-      component: BytecodeUiDemo,
       category: 'landing page',
-    },
-    {
-      id: 1,
-      title: 'ecom',
-      imageUrl: '/assests/inspiration-sites/ayush-wanjari.png',
       slug: 'bytecode-ui',
-      component: BytecodeUiDemo,
-      category: 'landing page',
-    },
-    {
-      id: 1,
-      title: 'Circle',
-      imageUrl: '/assests/inspiration-sites/ayush-wanjari.png',
-      slug: 'bytecode-ui',
-      component: BytecodeUiDemo,
-      category: 'landing page',
-    },
-    {
-      id: 1,
-      title: 'Pretty',
-      imageUrl: '/assests/inspiration-sites/ayush-wanjari.png',
-      slug: 'bytecode-ui',
-      component: BytecodeUiDemo,
-      category: 'landing page',
-    },
-
+      pageDemo: BytecodeUiDemo,
+      components: [
+        "feature-card.tsx",
+        "pricing-card.tsx",
+        "smooth-scroll-link.tsx"
+      ]
+    }
 
 ]

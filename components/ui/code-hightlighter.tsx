@@ -15,7 +15,7 @@ interface CodeHighlightProps {
 const CodeHighlight = ({ code, lang = 'tsx' }: CodeHighlightProps) => {
   const [copied, setCopied] = useState(false)
   return (
-    <div className='relative rounded-md border p-4'>
+    <div className='relative rounded-md p-4 '>
       <Button
         className={cn(
           'absolute right-4 top-4 h-8 w-8 bg-secondary',

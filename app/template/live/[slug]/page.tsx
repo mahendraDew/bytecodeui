@@ -20,5 +20,5 @@ export default async function LiveTemplatePage ({ params }: Props) {
   //   if (!currentTemplate) return <div className='w-full h-screen flex justify-center items-center'>Can&apos;t find template</div>
   if (!currentTemplate)
     return <CustomLayout><div className='w-full h-screen flex justify-center items-center'>Can&apos;t find template</div></CustomLayout>
-  return <currentTemplate.component />
+  return <currentTemplate.pageDemo />
 }
