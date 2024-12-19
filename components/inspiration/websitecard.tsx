@@ -26,7 +26,7 @@ export default function WebsiteCard ({
       rel='noopener noreferrer'
       className='block group  transition-all duration-300'
     >
-      <div className='bg-zinc-800 rounded-lg overflow-hidden shadow-lg transition-all duration-300'>
+      <div className='bg-zinc-800 border rounded-lg overflow-hidden shadow-lg transition-all duration-300'>
         <Image
           src={imageUrl}
           alt={title}
