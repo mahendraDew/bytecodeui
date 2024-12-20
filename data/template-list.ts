@@ -1,6 +1,7 @@
 import { ByteDailyDemo } from '@/components/templates/demos/byte-daily-demo'
 import { BytecodeUiDemo } from '@/components/templates/demos/bytecode-ui-demo'
 import SimplePortfolioDemo from '@/components/templates/demos/simple-portfolio-demo'
+import SimpleSAASLandingPageDemo from '@/components/templates/demos/simple-saas-landing-demo'
 
 export const TEMPLATE_LIST = [
   {
@@ -42,6 +43,22 @@ export const TEMPLATE_LIST = [
     pageDemo: SimplePortfolioDemo,
     components: [
       
+    ]
+  },
+  {
+    id: 4,
+    title: 'Simple SAAS Landing Page',
+    description:
+      'Simple SAAS Landing page for your next SAAS idea',
+    imageUrl: '/assests/template/simple-saas-landing-page.png',
+    category: 'saas',
+    slug: 'simple-saas-landing-page',
+    pageDemo: SimpleSAASLandingPageDemo,
+    components: [
+      'badge.tsx',
+      'footer.tsx',
+      'Main.tsx',
+      'navbar.tsx'
     ]
   }
 ]
