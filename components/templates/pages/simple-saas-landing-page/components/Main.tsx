@@ -1,7 +1,6 @@
 import React from 'react'
 import { Badge } from '../components/badge'
 import Link from 'next/link'
-// import {ArrowRightIcon} from "@radix-ui/react-icons";
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 import {
@@ -19,8 +18,6 @@ import {
   PencilIcon,
   RocketIcon
 } from 'lucide-react'
-// import {features} from "@/data/features";
-// import {pricing} from "@/data/pricing";
 
 const features = [
   {
@@ -70,7 +67,7 @@ const pricing = [
 export default function Main () {
   return (
     <>
-    {/* hero */}
+      {/* hero */}
       <main className='container max-w-7xl  mx-auto mb-20'>
         <div className='relative md:mt-24 mx-auto w-full max-w-4xl pt-4 text-center'>
           <div className='justify-center hidden md:flex'>

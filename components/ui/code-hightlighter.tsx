@@ -1,7 +1,10 @@
 'use client'
 import React, { useState } from 'react'
 import Highlight from 'react-highlight'
-import 'highlight.js/styles/github-dark.css'
+// import 'highlight.js/styles/github-dark.css'
+// import 'highlight.js/styles/tomorrow-night-bright.css'
+// import 'highlight.js/styles/ir-black.css'
+import 'highlight.js/styles/sunburst.css'
 
 import { Button } from '@/components/ui/button'
 import { Copy, Check } from 'lucide-react'
@@ -38,7 +41,7 @@ const CodeHighlight = ({ code, lang = 'tsx' }: CodeHighlightProps) => {
         )}
       </Button>
       <div className={'h-full w-full '}>
-        <Highlight className={cn('h-screen w-full overflow-auto bg-blue-300', lang)}>{code}</Highlight>
+        <Highlight className={cn('h-screen w-full overflow-auto', lang)}>{code}</Highlight>
       </div>
     </div>
   )
