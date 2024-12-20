@@ -54,20 +54,20 @@ const services = [
 
 export const SimplePortfolio = () => {
   return (
-    <div className='container mx-auto px-6'>
-      {/* nav */}
+    <div className='container mx-auto px-4 md:px-6'>
+      {/* Nav */}
       <motion.header
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className='fixed top-5 left-0 right-0 z-50 flex justify-center items-center '
+        className='fixed top-5 left-0 right-0 z-50 flex justify-center items-center'
       >
-        <nav className='w-full px-3 py-6 flex justify-center items-center rounded-lg bg-white/10   backdrop-blur-md container '>
-          <div className='flex items-center justify-between   w-full '>
-            <Link href='/' className='text-sm  '>
+        <nav className='w-full  flex justify-center items-center px-4 md:px-0'>
+          <div className='w-full md:container flex items-center justify-between md:w-full px-3 py-4  rounded-lg bg-white/10 backdrop-blur-md'>
+            <Link href='/' className='text-sm'>
               MAHENDRA
             </Link>
-            <div className='hidden md:flex text-sm items-center space-x-8'>
+            <div className='hidden md:flex text-sm items-center space-x-6'>
               <Link
                 href='#features'
                 className='hover:text-purple-400 transition-colors'
@@ -87,27 +87,28 @@ export const SimplePortfolio = () => {
                 PROJECT
               </Link>
             </div>
+            <div className='md:hidden'>MENU</div>
           </div>
         </nav>
       </motion.header>
 
-      {/* header */}
+      {/* Header */}
       <motion.header
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: 'easeOut' }}
-        className='relative flex flex-col items-left py-32 pt-40'
+        className='relative flex flex-col items-left w-full  py-24 sm:py-32'
       >
-{/* Radial Gradient Background */}
-<div className="absolute -top-96 left-1/2 transform -translate-x-1/2 w-[1000px] h-[1000px] bg-[radial-gradient(circle,rgba(255,105,180,0.5),rgba(138,43,226,0.4),rgba(30,144,255,0.2))] rounded-full blur-xl opacity-50"></div>
+        {/* Radial Gradient Background */}
+        <div className='absolute -top-40 md:-top-96 left-1/2 transform -translate-x-1/2 w-[400px] h-[400px] md:w-[800px] md:h-[800px] bg-[radial-gradient(circle,rgba(255,105,180,0.5),rgba(138,43,226,0.4),rgba(30,144,255,0.2))] rounded-full blur-xl opacity-50'></div>
 
-        <h1 className='text-9xl font-bold mb-4'>Hello 👋</h1>
-        <p className='text-7xl font-light'>
-          I&apos;m Mahendra Dewangan - curious designer and developer <br /> based in
-          India.
+        <h1 className='text-6xl sm:text-8xl font-bold mb-4'>Hello 👋</h1>
+        <p className='text-3xl sm:text-5xl font-light leading-relaxed '>
+          I&apos;m Mahendra Dewangan - curious designer and developer{' '}
+          <br className='hidden md:block' /> based in India.
         </p>
         <motion.div
-          className='flex gap-4 mt-6'
+          className='flex flex-wrap gap-4 mt-6'
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
@@ -116,7 +117,7 @@ export const SimplePortfolio = () => {
             <a
               key={link}
               href='#'
-              className='text-lg underline hover:text-gray-400 transition-colors'
+              className='text-base sm:text-lg underline hover:text-gray-400 transition-colors'
             >
               {link}
             </a>
@@ -124,7 +125,7 @@ export const SimplePortfolio = () => {
         </motion.div>
       </motion.header>
 
-      {/* work */}
+      {/* Work */}
       <motion.section
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -132,7 +133,7 @@ export const SimplePortfolio = () => {
         transition={{ duration: 0.8 }}
         className='mt-16'
       >
-        <h2 className='text-4xl font-bold mb-6'>Work.</h2>
+        <h2 className='text-2xl sm:text-4xl font-bold mb-6'>Work.</h2>
         <div className='grid grid-cols-1 sm:grid-cols-2 gap-6'>
           {projects.map(({ title, subtitle, image }, index) => (
             <motion.div
@@ -148,7 +149,7 @@ export const SimplePortfolio = () => {
                 width={600}
                 height={600}
               />
-              <p className='mt-1'>{title}</p>
+              <p className='mt-1 text-base sm:text-lg'>{title}</p>
               <motion.div
                 className='absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition'
                 initial={{ opacity: 0 }}
@@ -163,47 +164,41 @@ export const SimplePortfolio = () => {
           ))}
         </div>
       </motion.section>
-      {/* services */}
+
+      {/* Services */}
       <section className='mt-16'>
-        <h2 className='text-4xl font-bold mb-6'>Services.</h2>
-        <div className='grid grid-cols-1 sm:grid-cols-2 h-96 w-full  gap-6'>
+        <h2 className='text-2xl sm:text-4xl font-bold mb-6'>Services.</h2>
+        <div className='grid grid-cols-1 sm:grid-cols-2 gap-6'>
           {services.map(({ title, description }, index) => (
             <motion.div
               key={index}
-              className='p-6 border border-gray-700 rounded-lg hover:bg-pink-100/90 transition-all duration-500'
+              className='p-4 sm:p-6 border border-gray-700 rounded-lg hover:bg-pink-100/90 transition-all duration-500'
               initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
             >
-              <h3 className='text-xl font-bold mb-2'>{title}</h3>
-              <p>{description}</p>
+              <h3 className='text-lg sm:text-xl font-bold mb-2'>{title}</h3>
+              <p className='text-sm sm:text-base'>{description}</p>
             </motion.div>
           ))}
         </div>
       </section>
 
-      {/* footer */}
+      {/* Footer */}
       <motion.footer
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
-        className='mt-16 py-6 text-left '
+        className='mt-16 py-6 text-left'
       >
-        <p className='text-7xl'>LET&apos;S WORK TOGETHER</p>
-        <Button
-
-          className='mt-4 px-6 py-2  text-black rounded-md'
-        >
-        
+        <p className='text-4xl sm:text-6xl'>LET&apos;S WORK TOGETHER</p>
+        <Button className='mt-4 px-6 py-2 text-sm sm:text-base text-black rounded-md'>
           Schedule a call
         </Button>
-        <motion.div
-          className='flex justify-left gap-4 mt-6'
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.2 }}
-        >
+        <div
+                  className='flex justify-left gap-4 mt-6'
+>
           {['GitHub', 'LinkedIn', 'Twitter', 'Blog', 'Email'].map(link => (
             <a
               key={link}
@@ -213,9 +208,8 @@ export const SimplePortfolio = () => {
               {link}
             </a>
           ))}
-        </motion.div>
+        </div>
         <p className='mt-6'>Made with &lt;3 by <a href='https://x.com/mahendra_dew' className='underline'>Mahendra</a></p>
-
       </motion.footer>
     </div>
   )
