@@ -1,5 +1,6 @@
 import { ByteDailyDemo } from '@/components/templates/demos/byte-daily-demo'
 import { BytecodeUiDemo } from '@/components/templates/demos/bytecode-ui-demo'
+import { ImaginationWaitlistDemo } from '@/components/templates/demos/imagination-waitlist-demo'
 import SimplePortfolioDemo from '@/components/templates/demos/simple-portfolio-demo'
 import SimpleSAASLandingPageDemo from '@/components/templates/demos/simple-saas-landing-demo'
 
@@ -60,5 +61,20 @@ export const TEMPLATE_LIST = [
       'Main.tsx',
       'navbar.tsx'
     ]
+  },
+  {
+    id: 5,
+    title: 'Imagination Waitlist',
+    description: "Imagination waitlist - use this template for creating a waitlist of your next app.",
+    imageUrl: '/assests/template/imagination-waitlist.png',
+    category: 'waitlist',
+    slug: "imagination-waitlist",
+    pageDemo: ImaginationWaitlistDemo,
+    components: [
+      'footer.tsx',
+      'header.tsx',
+      'waitlist-form.tsx'
+    ]
   }
+
 ]
