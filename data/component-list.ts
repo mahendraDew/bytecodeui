@@ -1,5 +1,6 @@
 import { AnimatedBorderDemo } from "@/components/demos/animated-border-demo";
 import BackButtonIconDemo from "@/components/demos/back-button-icon-effect-demo";
+import ButtonArrowIconDemo from "@/components/demos/button-arrow-icon-demo";
 import { CardHorizonDemo } from "@/components/demos/card-horizon-demo";
 import { DynamicGridPatternDemo } from "@/components/demos/dynamic-grid-pattern-demo";
 import { FlickeringBackgroundDemo } from "@/components/demos/flickering-background-demo";
@@ -78,6 +79,12 @@ export const COMPONENTS_LIST = [
     component: BackButtonIconDemo,
     slug: "back-button-icon-effect",
     description: "back button with icon effect on hover."
+  },
+  {
+    name: "Back Button with arrow icon",
+    component: ButtonArrowIconDemo,
+    slug: "button-arrow-icon",
+    description: "back button with arrow icon and hover effect."
   },
   
 ]
