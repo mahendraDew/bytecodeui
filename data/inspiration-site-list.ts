@@ -167,4 +167,11 @@ export const INSPIRATION_SITE_LIST = [
     websiteUrl: 'https://uncut.wtf',
     category: 'Type foundry',
   },
+  {
+    id: 25,
+    title: 'GI',
+    imageUrl: '/assests/inspiration-sites/GI.png',
+    websiteUrl: 'https://generalidea.agency',
+    category: 'Unique',
+  },
 ];
