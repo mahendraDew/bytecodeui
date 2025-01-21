@@ -29,7 +29,7 @@ export default function Hero () {
     show: { opacity: 1, y: 0, transition: { type: 'spring' } }
   }
   return (
-    <div className='w-full h-screen  flex justify-center items-center'>
+    <div className='w-full min-h-screen h-screen flex justify-center items-center '>
       <div className='z-0 relative  w-full h-full'>
         <FlickeringGrid
           className='-z-0  size-full bg-black'
@@ -55,7 +55,7 @@ export default function Hero () {
           }}
         >
           <div
-            className={`w-full  flex justify-center items-center z-10 absolute top-0  h-full px-5 ${manrope.className}`}
+            className={`w-full  flex justify-center items-center z-10 absolute top-0  h-full px-5 ${manrope.className} `}
           >
             {/*home page layout v1 */}
             {/* <motion.h1
@@ -76,11 +76,8 @@ export default function Hero () {
             </motion.h1> */}
 
             {/*home page layout v2*/}
-            <motion.h1
-              variants={FADE_DOWN_ANIMATION_VARIANTS}
-              className=' font-semibold  bg-gradient-to-br from-slate-300 to-zinc-500 bg-clip-text text-transparent tracking-normal text-xl '
-            >
-              <AnimatedShinyText className="inline-flex items-center justify-center px-4 py-1 transition ease-out ">
+            <motion.h1 variants={FADE_DOWN_ANIMATION_VARIANTS} className='  '>
+              <AnimatedShinyText className='inline-flex items-center justify-center px-4 py-1 transition ease-out font-semibold  bg-gradient-to-br from-slate-300 to-zinc-500 bg-clip-text text-transparent tracking-normal text-xl'>
                 BYTECODE
               </AnimatedShinyText>
             </motion.h1>

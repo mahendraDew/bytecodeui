@@ -63,6 +63,8 @@ export default function Explore () {
               key={card.title}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
+              whileHover={{scale: 0.99, transition: { duration: 0.15 },
+            }}
               transition={{
                 duration: 0.5,
                 ease: 'easeOut',
@@ -73,7 +75,7 @@ export default function Explore () {
               <Link href={card.href} className='block h-full m-0 p-0'>
                 <Spotlight
                   spotlightColor='rgba(185, 185, 185, 0.1)'
-                  className={`w-full m-0 p-0 rounded-lg flex items-center justify-center transition-transform duration-300 hover:scale-95 ${
+                  className={`w-full m-0 p-0 rounded-lg flex items-center justify-center transition-transform duration-300 ${
                     index === 2 ? 'h-64 md:h-80' : 'h-64'
                   }`}
                 >
