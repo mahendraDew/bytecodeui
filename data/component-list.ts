@@ -10,6 +10,7 @@ import { ShimmerDemo } from "@/components/demos/shimmer-demo";
 import { SpotligthBorderDemo } from "@/components/demos/spotlight-border-demo";
 import { SpotlightDemo } from "@/components/demos/spotlight-demo";
 import { StaticMacDemo } from "@/components/demos/static-mac-demo";
+import TimeFrameListHoverEffectDemo from "@/components/demos/time-frame-list-hover-effect-demo";
 
 
 export const COMPONENTS_LIST = [
@@ -85,6 +86,12 @@ export const COMPONENTS_LIST = [
     component: ButtonArrowIconDemo,
     slug: "button-arrow-icon",
     description: "back button with arrow icon and hover effect."
+  },
+  {
+    name: "Timeframe List hover effect",
+    component: TimeFrameListHoverEffectDemo,
+    slug: "time-frame-list-hover-effect",
+    description: "list with timeframe hover effect."
   },
   
 ]
