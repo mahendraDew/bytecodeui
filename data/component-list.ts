@@ -1,4 +1,5 @@
 import { AnimatedBorderDemo } from "@/components/demos/animated-border-demo";
+import BackButtonIconDemo from "@/components/demos/back-button-icon-effect-demo";
 import { CardHorizonDemo } from "@/components/demos/card-horizon-demo";
 import { DynamicGridPatternDemo } from "@/components/demos/dynamic-grid-pattern-demo";
 import { FlickeringBackgroundDemo } from "@/components/demos/flickering-background-demo";
@@ -71,6 +72,12 @@ export const COMPONENTS_LIST = [
     component: DynamicGridPatternDemo,
     slug: "dynamic-grid-pattern",
     description: "Grid Background from your hero page with hover effect."
+  },
+  {
+    name: "Back Button Icon effect",
+    component: BackButtonIconDemo,
+    slug: "back-button-icon-effect",
+    description: "back button with icon effect on hover."
   },
   
 ]
